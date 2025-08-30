@@ -75,10 +75,10 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
             const isActive = location === item.href;
             
             return (
-              <Link key={item.href} href={item.href}>
-                <a 
+              <Link key={item.href} href={item.href} asChild>
+                <button
                   className={cn(
-                    "flex items-center px-4 py-3 rounded-lg transition-colors w-full",
+                    "flex items-center px-4 py-3 rounded-lg transition-colors w-full text-left",
                     isActive 
                       ? "text-primary bg-accent" 
                       : "text-foreground hover:bg-accent"
@@ -88,7 +88,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                 >
                   <Icon className="w-5 h-5 mr-3" />
                   {item.label}
-                </a>
+                </button>
               </Link>
             );
           })}

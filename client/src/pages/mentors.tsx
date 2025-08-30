@@ -7,8 +7,8 @@ import { MentorCard } from "@/components/mentor-card";
 import { mockMentors } from "@/lib/mock-data";
 
 export default function Mentors() {
-  const [selectedIndustry, setSelectedIndustry] = useState<string>("");
-  const [selectedExperience, setSelectedExperience] = useState<string>("");
+  const [selectedIndustry, setSelectedIndustry] = useState<string>("all");
+  const [selectedExperience, setSelectedExperience] = useState<string>("all");
 
   const handleConnect = (mentorId: string) => {
     console.log("Connecting with mentor:", mentorId);
@@ -16,7 +16,7 @@ export default function Mentors() {
   };
 
   const filteredMentors = mockMentors.filter(mentor => {
-    if (selectedIndustry && mentor.industry !== selectedIndustry) return false;
+    if (selectedIndustry && selectedIndustry !== "all" && mentor.industry !== selectedIndustry) return false;
     return true;
   });
 
@@ -38,7 +38,7 @@ export default function Mentors() {
               <SelectValue placeholder="All Industries" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">All Industries</SelectItem>
+              <SelectItem value="all">All Industries</SelectItem>
               <SelectItem value="Technology">Technology</SelectItem>
               <SelectItem value="Marketing">Marketing</SelectItem>
               <SelectItem value="Design">Design</SelectItem>
@@ -51,7 +51,7 @@ export default function Mentors() {
               <SelectValue placeholder="Experience Level" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">All Levels</SelectItem>
+              <SelectItem value="all">All Levels</SelectItem>
               <SelectItem value="5+">5+ Years</SelectItem>
               <SelectItem value="10+">10+ Years</SelectItem>
               <SelectItem value="senior">Senior Executive</SelectItem>
