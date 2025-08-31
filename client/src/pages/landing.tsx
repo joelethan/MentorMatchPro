@@ -118,9 +118,17 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className="py-20 px-6">
         <div className="container mx-auto text-center">
-          <Badge className="mb-6" data-testid="hero-badge">
-            🚀 Join 10,000+ professionals in national career guidance programmes
-          </Badge>
+          <div className="mb-6 flex flex-col items-center gap-4">
+            <img 
+              src="https://business-omk.netlify.app/images/landing/omukozi-gov.svg" 
+              alt="Omukozi Government Logo" 
+              className="h-16 w-auto"
+              data-testid="omukozi-logo"
+            />
+            <Badge data-testid="hero-badge">
+              🚀 Join 10,000+ professionals in national career guidance programmes
+            </Badge>
+          </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight" data-testid="hero-title">
             National Career Guidance &
