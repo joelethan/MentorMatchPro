@@ -93,9 +93,9 @@ export default function LandingPage() {
               <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">
                 Success Stories
               </a>
-              <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+              {/* <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
                 Pricing
-              </a>
+              </a> */}
             </nav>
             
             <div className="flex items-center space-x-4">
