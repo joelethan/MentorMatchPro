@@ -23,23 +23,23 @@ export default function LandingPage() {
   const features = [
     {
       icon: Users,
-      title: "Expert Mentors",
-      description: "Connect with industry professionals from top companies worldwide"
+      title: "Career Guidance Providers",
+      description: "Connect with certified national career guidance providers and industry professionals"
     },
     {
       icon: Target,
-      title: "Personalized Roadmaps",
-      description: "Get custom career paths tailored to your goals and skill level"
+      title: "Skills Assessment",
+      description: "Comprehensive skills assessment tools to identify your strengths and growth areas"
     },
     {
       icon: BookOpen,
-      title: "Learning Resources",
-      description: "Access curated content and courses to accelerate your growth"
+      title: "Workshops & Resources",
+      description: "Access structured workshops and curated learning resources for career development"
     },
     {
       icon: TrendingUp,
-      title: "Progress Tracking",
-      description: "Monitor your development with detailed analytics and insights"
+      title: "Omukozi Integration",
+      description: "Powered by Omukozi data system for real-time career trends and insights"
     }
   ];
 
@@ -119,19 +119,19 @@ export default function LandingPage() {
       <section className="py-20 px-6">
         <div className="container mx-auto text-center">
           <Badge className="mb-6" data-testid="hero-badge">
-            🚀 Join 10,000+ professionals accelerating their careers
+            🚀 Join 10,000+ professionals in national career guidance programmes
           </Badge>
           
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight" data-testid="hero-title">
-            Connect with
-            <span className="text-primary"> Expert Mentors</span>
+            National Career Guidance &
+            <span className="text-primary"> Mentorship Platform</span>
             <br />
             Transform Your Career
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto" data-testid="hero-description">
-            Get personalized guidance from industry leaders, follow structured career roadmaps, 
-            and accelerate your professional growth with AI-powered matching.
+            Access national career guidance programmes with expert mentors, skills assessment tools, 
+            and structured workshops powered by Omukozi data integration.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -179,11 +179,11 @@ export default function LandingPage() {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="features-title">
-              Everything You Need to Succeed
+              National Career Guidance & Mentorship Programmes
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="features-description">
-              Our comprehensive platform provides all the tools and guidance you need 
-              to accelerate your professional growth.
+              Our comprehensive national platform provides career guidance providers, skills assessment, 
+              workshops, and mentorship programmes to accelerate your professional growth.
             </p>
           </div>
           
@@ -218,7 +218,7 @@ export default function LandingPage() {
               Success Stories
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Hear from professionals who transformed their careers with CareerConnect
+              Hear from professionals who transformed their careers through our national career guidance and mentorship programmes
             </p>
           </div>
           
@@ -249,11 +249,11 @@ export default function LandingPage() {
       <section className="py-20 px-6 bg-primary text-primary-foreground">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="cta-title">
-            Ready to Accelerate Your Career?
+            Ready to Access National Career Guidance?
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto" data-testid="cta-description">
             Join thousands of professionals who are already transforming their careers 
-            with expert mentorship and personalized guidance.
+            through national career guidance programmes, skills assessment, and expert mentorship.
           </p>
           <Button 
             size="lg" 
@@ -280,26 +280,26 @@ export default function LandingPage() {
                 <span className="font-bold text-primary">CareerConnect</span>
               </div>
               <p className="text-muted-foreground text-sm">
-                Connecting ambitious professionals with expert mentors worldwide.
+                National career guidance providers connecting professionals with expert mentors through Omukozi integration.
               </p>
             </div>
             
             <div>
-              <h4 className="font-semibold text-foreground mb-4">Platform</h4>
+              <h4 className="font-semibold text-foreground mb-4">Services</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <div>Find Mentors</div>
-                <div>Career Roadmaps</div>
-                <div>Learning Resources</div>
-                <div>Progress Tracking</div>
+                <div>Career Guidance Providers</div>
+                <div>Skills Assessment</div>
+                <div>Workshops</div>
+                <div>Mentorship Programmes</div>
               </div>
             </div>
             
             <div>
-              <h4 className="font-semibold text-foreground mb-4">Company</h4>
+              <h4 className="font-semibold text-foreground mb-4">National Platform</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <div>About Us</div>
-                <div>Careers</div>
-                <div>Contact</div>
+                <div>Omukozi Integration</div>
+                <div>National Programmes</div>
+                <div>Career Guidance</div>
                 <div>Privacy Policy</div>
               </div>
             </div>
